@@ -100,6 +100,99 @@ html,body{
     color: white;
 }
 
+#sidemenu{
+    background-color: rgba(255, 255, 255, 0.76);
+    display: flex;
+    /* flex-direction: column; */
+    align-items:center;
+    justify-content:space-evenly;
+    height: 70vh;
+    width: 25vw;
+    /* background-color: red; */
+    position: fixed;
+    right: -22%;
+    top: 50%;
+    transform: translate(0%,-50%);
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   /* background-color: rgb(255, 255, 255); */
+   z-index: 99;
+   overflow: hidden;
+   font-family: montserrat;
+
+}
+
+#sidemenu:hover{
+    right: 0%;
+    transition: ease-in-out;
+    transition-duration: .3s;
+    
+}
+
+
+
+#opentext{
+    height: 100%;
+    width: 10%;
+    /* background-color: red; */
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 1vw;
+   
+
+}
+
+#innermenu{
+    height: 100%;
+    width: 90%;
+    /* background-color: blue; */
+    padding: 1vw;
+}
+
+#personalInfo{
+    height: 28%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+
+.innermenuitems{
+    width: 100%;
+    height: 15.1%;
+    /* background-color: maroon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    border-top: 1px solid rgb(100, 100, 100);
+    
+}
+
+.innermenuitems a:hover{
+    scale: 1.3;
+    transition-duration: .2s;
+    transition: ease-in-out;
+}
+
+.innermenuitems a{
+    color: black;
+    text-decoration-line: none;
+}
+
+#personalimg{
+    height: 7vw;
+    width: 7vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    background-image: url(https://imgs.search.brave.com/ZZL4lnNTqep3cP88nmZ6YbthIhTsmW5h_tobIuShv8s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWd2/My5mb3Rvci5jb20v/aW1hZ2VzL2Jsb2ct/cmljaHRleHQtaW1h/Z2UvMTAtcHJvZmls/ZS1waWN0dXJlLWlk/ZWFzLXRvLW1ha2Ut/eW91LXN0YW5kLW91/dC5qcGc);
+    background-position: center;
+    background-size: cover;
+
+}
 
 
 
@@ -120,7 +213,7 @@ html,body{
     font-size: 3vw;
     text-transform: uppercase;
     overflow: hidden;
-    /* display: none; */
+    display: none;
 
 }
 
