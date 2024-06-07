@@ -87,10 +87,13 @@ html,body{
 }
 
 .socialbutton:hover .socialname{
-    top: -75%;
-    transform: translateX(95%);
-    transition: ease-in-out;
-    transition-duration: 1s;
+transform: translate(95%,-50%);
+transition: ease-in-out;
+transition-duration: .6s;
+
+
+   
+   
 }
 
 .socialname:hover{
@@ -1017,6 +1020,17 @@ z-index: 10;
     100%{
         left:100%
     }
+    
+}
+
+@keyframes anim2 {
+    0%{
+        left: -250%;
+    }
+    100%{
+        left: 250%;
+    }
+    
     
 }
 
