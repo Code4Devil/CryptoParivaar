@@ -1,0 +1,299 @@
+@font-face {
+    font-family: montserrat;
+    src: url(/Montserrat-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:montserrat;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#page{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E4E0DD;
+
+}
+
+#nav{
+    height: 12%;
+    width: 100%;
+    /* background-color: black; */
+    background-color: white;
+}
+
+#nav input{
+    height: 2.5vw;
+    width: 18vw;
+    border: none;
+    border-radius: 6px;
+    padding: 0vw 1vw;
+    border: .5px solid black;
+
+}
+
+#rest{
+    height: 88%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    padding: 4vw;
+    justify-content: space-between;
+}
+
+#restleft{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(207, 207, 207);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2vw; */
+    /* padding: 1vw; */
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#restleft h1{
+    font-size: 1.7vw;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+
+}
+
+
+
+
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+}
+
+#navleft{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+   
+    
+}
+#navright{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+#navright #profilepic{
+    display: flex;
+    align-items: center;
+    gap: .7vw;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+}
+
+#nav i{
+    font-size: 2vw;
+}
+
+#pic{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.option{
+    height: 15%;
+    width: 80%;
+    /* background-color: pink; */
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1vw;
+
+
+}
+.option a{
+    font-size: 1.2vw;
+}
+
+
+
+.option a{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    margin-left: 1vw;
+
+}
+.option a:hover{
+    scale: 1.2;
+}
+.option i:hover{
+    scale:1.2;
+}
+
+#setting{
+    /* h100% */
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.541);
+}
+
+#restright{
+    width: 75%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1vw;
+     
+}
+
+#heading{
+    padding-left: 3vw;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+#profilediv{
+    width: 100%;
+    height: 22%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+#bigpic{
+    height: 8vw;
+    width: 8vw;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.button{
+    height: 3vw;
+    width: 10vw;
+    /* background-color: blue; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5vw;
+    border: .5px solid blue;
+    color: blue;
+
+}
+
+#buttons a{
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+#details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+#detailsleft{
+    /* background-color: blue; */
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#detailsright{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1vw;
+}
+
+#details h3{
+    font-size: 1.2vw;
+}
+
+#details input{
+    height: 2vw;
+    width: 20vw;
+    border-radius: 7px;
+}
+
+#big input {
+    height: 6.7vw;
+    width: 20vw;
+}
+
+#lastbuttons{
+    margin-top: 1vw;
+    
+    height: 10%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    gap: 1vw;
+    padding-left: 3.5vw;
+}
+
+
+.lastbutton{
+    height: 100%;
+    width: 15%;
+    /* background-color: black; */
+    border: 1px solid blue;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastbutton a{
+    text-decoration: none;
+    color: blue;
+
+}
+
+#button1 a{
+    color: white;
+}
+#button1{
+    background-color: blue;
+}
+
