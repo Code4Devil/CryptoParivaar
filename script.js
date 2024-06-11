@@ -50,6 +50,7 @@ document.addEventListener("mousemove",function(dets){
 // })
 
 
+
 var tl = gsap.timeline();
 
 tl
@@ -91,7 +92,7 @@ window.addEventListener("resize", function () {
 
 function files(index) {
   var data = `
-    ./Frame/Frame/frame00001.png
+./Frame/Frame/frame00001.png
 ./Frame/Frame/frame00002.png
 ./Frame/Frame/frame00003.png
 ./Frame/Frame/frame00004.png

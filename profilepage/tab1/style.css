@@ -57,7 +57,7 @@ html,body{
 #restleft{
     width: 20%;
     height: 100%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
