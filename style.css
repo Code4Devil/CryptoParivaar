@@ -52,6 +52,7 @@ html,body{
 } */
 
 #social{
+    backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.466);
     display: flex;
     flex-direction: column;
@@ -90,7 +91,8 @@ html,body{
     right: -10%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background-color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.623);
     height:12vh;
     width: 12vw;
     display: flex;
@@ -116,14 +118,12 @@ transition-duration: .6s;
    
 }
 
-.socialname:hover{
-    background-color: rgb(212, 212, 212);
-}
 .socialname:hover .socialname a{
     color: white;
 }
 
 #sidemenu{
+    backdrop-filter: blur(3px);
     background-color: rgba(255, 255, 255, 0.76);
     display: flex;
     /* flex-direction: column; */
@@ -357,7 +357,8 @@ text-align: center;
     transform: translate(-50%,-50%);
     z-index: 99;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.452);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.733);
     /* backdrop-filter: blur(10px); */
     padding: 0px 10px;
     padding: 0px 1vw;
