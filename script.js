@@ -33,24 +33,6 @@ ScrollTrigger.refresh();
 }
 loco();
 
-var crsr = document.querySelector("#cursor")
-document.addEventListener("mousemove",function(dets){
-
- crsr.style.left=dets.x-12+"px"
- crsr.style.top=dets.y-12+"px"
-   
-})
-
-// var crsrblr = document.querySelector("#cursorblur")
-// document.addEventListener("mousemove",function(dets){
-
-//  crsrblr.style.left=dets.x- 40 +"px"
-//  crsrblr.style.top=dets.y-40+"px"
-   
-// })
-
-
-
 var tl = gsap.timeline();
 
 tl
@@ -75,6 +57,93 @@ tl
   opacity:0,
   delay:-1
 })
+
+var crsr = document.querySelector("#cursor");
+
+
+window.addEventListener("mousemove", function(dets){
+  gsap.to(cursor,{
+    x:dets.clientX,
+    y:dets.clientY
+  })
+})
+
+
+
+
+
+
+
+
+
+var big1 = document.querySelector(".big");
+
+
+big1.addEventListener("mousemove", function(dets){
+  gsap.to(cursor,{
+    scale:4,
+    opacity:0.4
+  })
+
+  gsap.to(".big h1",{
+    color:"#fff"
+  })
+})
+
+big1.addEventListener("mouseleave", function(dets){
+  gsap.to(cursor,{
+    scale:1,
+    opacity:1
+    
+  })
+
+  gsap.to(".big h1",{
+    color:"#000"
+  })
+})
+
+
+
+
+
+
+
+
+
+
+var big2 = document.querySelector(".big2");
+
+big2.addEventListener("mousemove", function(dets){
+  gsap.to(cursor,{
+    scale:4,
+    opacity:0.2
+  })
+
+  gsap.to(".big2 h1",{
+    color:"#000",
+    duration:.3
+  })
+})
+
+big2.addEventListener("mouseleave", function(dets){
+  gsap.to(cursor,{
+    scale:1,
+    opacity:1
+  })
+  gsap.to(".big2 h1",{
+    color:"#fff"
+  })
+})
+
+
+
+
+
+
+
+
+
+
 
 
 const canvas = document.querySelector("canvas");
@@ -441,3 +510,44 @@ gsap.to("#canvaspage",{
 //     scroller:`#main`
 //   }
 // })
+
+
+var clutter = "";
+
+document.querySelector("#pageno2>h1").textContent.split("").forEach(function(dets){
+    clutter += `<span>${dets}</span>`
+
+    document.querySelector("#pageno2>h1").innerHTML = clutter;
+})
+
+gsap.to("#pageno2>h1>span",{
+    scrollTrigger:{
+        trigger:`#pageno2>h1>span`,
+        start:`top bottom`,
+        end:`bottom top`,
+        scroller:`#main`,
+        scrub:.5,
+    },
+    stagger:.2,
+    color:`#fff`
+})
+
+var clutter = "";
+
+document.querySelector("#pageno3>h1").textContent.split("").forEach(function(dets){
+    clutter += `<span>${dets}</span>`
+
+    document.querySelector("#pageno3>h1").innerHTML = clutter;
+})
+
+gsap.to("#pageno3>h1>span",{
+    scrollTrigger:{
+        trigger:`#pageno3>h1>span`,
+        start:`top bottom`,
+        end:`bottom top`,
+        scroller:`#main`,
+        scrub:.5,
+    },
+    stagger:.2,
+    color:`#fff`
+})
