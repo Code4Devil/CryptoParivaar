@@ -63,8 +63,8 @@ var crsr = document.querySelector("#cursor");
 
 window.addEventListener("mousemove", function(dets){
   gsap.to(cursor,{
-    x:dets.clientX,
-    y:dets.clientY
+    x:dets.clientX-30,
+    y:dets.clientY-30
   })
 })
 
@@ -76,31 +76,31 @@ window.addEventListener("mousemove", function(dets){
 
 
 
-var big1 = document.querySelector(".big");
+// var big1 = document.querySelector(".big");
 
 
-big1.addEventListener("mousemove", function(dets){
-  gsap.to(cursor,{
-    scale:4,
-    opacity:0.4
-  })
+// big1.addEventListener("mousemove", function(dets){
+//   // gsap.to(cursor,{
+//   //   scale:4,
+//   //   opacity:0.4
+//   // })
 
-  gsap.to(".big h1",{
-    color:"#fff"
-  })
-})
+//   // gsap.to(".big h1",{
+//   //   color:"#fff"
+//   // })
+// })
 
-big1.addEventListener("mouseleave", function(dets){
-  gsap.to(cursor,{
-    scale:1,
-    opacity:1
+// big1.addEventListener("mouseleave", function(dets){
+//   // gsap.to(cursor,{
+//   //   scale:1,
+//   //   opacity:1
     
-  })
+//   // })
 
-  gsap.to(".big h1",{
-    color:"#000"
-  })
-})
+//   // gsap.to(".big h1",{
+//   //   color:"#000"
+//   // })
+// })
 
 
 
@@ -116,23 +116,20 @@ var big2 = document.querySelector(".big2");
 big2.addEventListener("mousemove", function(dets){
   gsap.to(cursor,{
     scale:4,
-    opacity:0.2
+    
   })
 
-  gsap.to(".big2 h1",{
-    color:"#000",
-    duration:.3
-  })
+
 })
 
 big2.addEventListener("mouseleave", function(dets){
   gsap.to(cursor,{
     scale:1,
-    opacity:1
+    opacity:1,
+    // bgcolor:'#fff'
+    
   })
-  gsap.to(".big2 h1",{
-    color:"#fff"
-  })
+  
 })
 
 
