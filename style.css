@@ -244,7 +244,7 @@ transition-duration: .6s;
     font-size: 3vw;
     text-transform: uppercase;
     overflow: hidden;
-    display: none;
+    /* display: none; */
 
 }
 

@@ -216,7 +216,7 @@ input[type=checkbox]
     height: 100%;
     width: 50%;
     background-image: url(https://imgs.search.brave.com/dppMMxrbFJSqt8qz4EE520pjvFQ8JtQED9l4YmHH0a8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmlkZWxpdHkuY29t/L2Jpbi1wdWJsaWMv/MDYwX3d3d19maWRl/bGl0eV9jb20vaW1h/Z2VzL0xDL2luZm9n/cmFwaGljL2NyeXB0/b2N1cnJlbmN5LW1p/bmluZy5wbmc);
-    background-position-x: -12vw;
+    background-position-x: -15vw;
     /* background-position-y: 2vw; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -232,3 +232,239 @@ input[type=checkbox]
 #rightbuttons a{
    color: white;
 }
+
+
+
+@media(max-width:620px){
+    #login{
+        flex-direction: column-reverse;
+        width: 90%;
+        height:75%;
+
+    }
+    #loginright{
+        width: 100%;
+        background-size: cover;
+        background-position: 0px;
+        /* background-position-y: 2vh; */
+        height: 50%;
+
+    }
+    #loginleft{
+        width: 100%;
+        padding: 4vh;
+        gap: .5vh;
+        justify-content: start;
+    }
+    #loginleft h1{
+        font-size: 2vh;
+    }
+    .inputfield{
+        height: 7vh;
+    }
+    
+
+    #buttons{
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    #signupreference{
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.4vh;
+        text-align: center;
+
+    }
+
+    #nav{
+        position: absolute;
+        top: 0;
+        padding: 0vh 3vh;
+    }
+
+    #nav h2{
+        font-size: 1.5vh;
+    }
+
+    #rightbuttons{
+        gap: 1.3vh;
+    }
+
+    #nav a{
+        font-size: 1vh;
+        
+    }
+    #buttons{
+        width: 100%;
+    }
+
+
+    #loginleft input{
+        height: 6vh;
+
+    }
+
+    .inputfield p{
+        font-size: 2vh;
+    }
+
+   #leftcheck{
+    position: relative;
+    left: 3%;
+   }
+
+    #leftcheck h3{
+        font-size:1.5vh;
+        position:absolute;
+        left:250%;
+    }
+
+    
+input[type=checkbox]
+{
+    scale: 1;
+}
+
+#rightcheck h3{
+    font-size: 1.5vh;
+
+}
+
+#loginbutton a{
+    font-size: 2vh;
+}
+
+#googlebutton{
+    
+    text-align: center;
+    /* background-color: red; */
+}
+#googlebutton>a{
+    font-size: 2vh;
+
+}
+#googlebutton i{
+    font-size: 3vh;
+}
+
+}
+
+@media(max-width:768px){
+    #login{
+        flex-direction: column-reverse;
+        width: 90%;
+        height:75%;
+
+    }
+    #loginright{
+        width: 100%;
+        background-size: cover;
+        background-position: 0px;
+        /* background-position-y: 2vh; */
+        height: 50%;
+
+    }
+    #loginleft{
+        width: 100%;
+        padding: 4vh;
+        gap: .5vh;
+        justify-content: start;
+    }
+    #loginleft h1{
+        font-size: 2vh;
+    }
+    .inputfield{
+        height: 7vh;
+    }
+    
+
+    #buttons{
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    #signupreference{
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.4vh;
+        text-align: center;
+
+    }
+
+    #nav{
+        position: absolute;
+        top: 0;
+        padding: 0vh 3vh;
+    }
+
+    #nav h2{
+        font-size: 1.5vh;
+    }
+
+    #rightbuttons{
+        gap: 1.3vh;
+    }
+
+    #nav a{
+        font-size: 1vh;
+        
+    }
+    #buttons{
+        width: 100%;
+    }
+
+
+    #loginleft input{
+        height: 6vh;
+
+    }
+
+    .inputfield p{
+        font-size: 2vh;
+    }
+
+   #leftcheck{
+    position: relative;
+    left: 3%;
+   }
+
+    #leftcheck h3{
+        font-size:1.5vh;
+        position:absolute;
+        left:250%;
+    }
+
+    
+input[type=checkbox]
+{
+    scale: 1;
+}
+
+#rightcheck h3{
+    font-size: 1.5vh;
+
+}
+
+#loginbutton a{
+    font-size: 2vh;
+}
+
+#googlebutton{
+    text-align: center;
+}
+#googlebutton a{
+    font-size: 2vh;
+}
+    
+    
+}
+
